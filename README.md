@@ -23,8 +23,7 @@ const Weather = () => {
   const [loading, setLoading] = useState(false);
 
   // OpenWeatherMapから取得したAPIキー
-  const OPENWEATHERMAP_API_KEY = '2147da2b23b910faa9e8fd8cc3071ed9';
-  const GOOGLEMAP_API_KEY = 'AIzaSyDI3QAXQR_BDyfAlKBmCqj2Tq-liMwhibs';
+
 
   // 新しい都市入力フィールドを追加する関数
   const addCityInput = () => {
@@ -112,7 +111,7 @@ const handleCityChange = (index, value) => {
 
 
   return (
-    <LoadScript googleMapsApiKey='AIzaSyDI3QAXQR_BDyfAlKBmCqj2Tq-liMwhibs'>
+    <LoadScript googleMapsApiKey=''>
     <div>
       <h1>国内天気比較サイト</h1>
       <button onClick={getLocationWeather}>現在位置の天気を取得</button>
